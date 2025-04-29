@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capacitación Ley 21.442</title>
+  <title>Capacitación Ley 21.442 - Copropiedad</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -12,17 +12,31 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
+      padding: 0;
       background-color: #f4f6f8;
       color: #2c3e50;
     }
     header {
-      background: linear-gradient(90deg, #2c3e50, #34495e);
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8d92ff0a3c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
       color: white;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 6rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
     }
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
     header p {
@@ -37,6 +51,8 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
     }
     .section h2 {
       font-size: 1.8rem;
@@ -52,7 +68,7 @@
       margin-bottom: 0.5rem;
     }
     .quiz {
-      background: #ffffff;
+      background: white;
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -102,9 +118,22 @@
       padding: 2rem;
       margin-top: 3rem;
     }
+    video.bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.1;
+    }
   </style>
 </head>
 <body>
+  <video class="bg-video" autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-high-rise-building-8729/1080p.mp4" type="video/mp4">
+  </video>
+
   <header>
     <h1>Capacitación Ley 21.442</h1>
     <p>Una guía clara y profesional sobre la Ley de Copropiedad para administradores de edificios y comunidades residenciales.</p>
@@ -112,53 +141,52 @@
 
   <section class="section">
     <h2>¿Qué es la Ley 21.442?</h2>
-    <p>Es la nueva normativa que regula la vida en comunidad en edificios y condominios. Reemplaza la antigua ley de copropiedad, buscando mayor transparencia, orden y participación de todos los actores: copropietarios, comité y administrador.</p>
+    <p>La Ley 21.442 regula la vida en comunidad dentro de edificios y condominios en Chile, introduciendo importantes cambios respecto a la copropiedad, con el objetivo de mejorar la transparencia, el orden y la participación de los copropietarios, comité y administrador.</p>
   </section>
 
   <section class="section">
     <h2>Rol del Administrador</h2>
-    <p>Es el representante legal de la comunidad. Debe cumplir funciones clave como:</p>
+    <p>El administrador es la figura clave para la gestión eficiente de los bienes comunes. Entre sus principales funciones están:</p>
     <ul>
-      <li>Ejecutar acuerdos de la asamblea.</li>
+      <li>Implementar los acuerdos tomados en las asambleas.</li>
       <li>Mantener los bienes comunes en buen estado.</li>
-      <li>Contratar servicios y seguros necesarios.</li>
-      <li>Rendir cuentas periódicamente.</li>
+      <li>Contratar servicios y seguros necesarios para la comunidad.</li>
+      <li>Rendir cuentas periódicamente a los copropietarios.</li>
     </ul>
-    <p>Con la nueva ley, se exige certificación obligatoria y rendición de cuentas clara.</p>
   </section>
 
   <section class="section">
     <h2>Comité de Administración</h2>
-    <p>Órgano fiscalizador elegido por los copropietarios. Sus funciones son:</p>
+    <p>El comité de administración, elegido por los copropietarios, tiene la responsabilidad de:</p>
     <ul>
-      <li>Supervisar al administrador.</li>
-      <li>Velar por el cumplimiento del reglamento interno.</li>
-      <li>Evaluar presupuestos y proyectos.</li>
+      <li>Supervisar la gestión del administrador.</li>
+      <li>Velar por el cumplimiento de las normativas internas.</li>
+      <li>Evaluar y aprobar los presupuestos de la comunidad.</li>
     </ul>
   </section>
 
   <section class="section">
     <h2>Asamblea de Copropietarios</h2>
-    <p>Instancia máxima de decisión. Participar en ella permite:</p>
+    <p>La asamblea de copropietarios es el órgano máximo de decisión en la comunidad. Entre sus atribuciones se encuentran:</p>
     <ul>
-      <li>Elegir al comité y al administrador.</li>
-      <li>Aprobar o rechazar presupuestos.</li>
+      <li>Elegir al administrador y al comité de administración.</li>
+      <li>Aprobar los presupuestos y proyectos de la comunidad.</li>
       <li>Modificar el reglamento de copropiedad.</li>
     </ul>
   </section>
 
   <section class="section">
-    <h2>¿Qué cambia con la Ley 21.442?</h2>
+    <h2>¿Qué Cambia con la Ley 21.442?</h2>
     <ul>
-      <li>Certificación obligatoria para administradores.</li>
-      <li>Reglas claras para rendición de cuentas.</li>
-      <li>Facilidad para asambleas virtuales.</li>
-      <li>Fiscalización por terceros en ciertos casos.</li>
+      <li>La certificación obligatoria para los administradores de edificios.</li>
+      <li>Un sistema más claro de rendición de cuentas a los copropietarios.</li>
+      <li>La posibilidad de realizar asambleas virtuales.</li>
+      <li>Fiscalización por terceros en ciertos casos, asegurando mayor transparencia.</li>
     </ul>
   </section>
 
   <section class="quiz">
-    <h2>Evalúa tu aprendizaje</h2>
+    <h2>Evalúa tu conocimiento sobre la Ley 21.442</h2>
     <div id="quiz-container"></div>
     <button onclick="submitQuiz()">Enviar respuestas</button>
     <div id="quiz-result" class="result"></div>
@@ -204,19 +232,19 @@
       div.innerHTML = `<p>${idx + 1}. ${q.question}</p>` +
         q.options.map((opt, i) => `
           <label><input type="radio" name="q${idx}" value="${i}"> ${opt}</label>
-        `).join("");
+        `).join('');
       quizContainer.appendChild(div);
     });
 
     function submitQuiz() {
       let score = 0;
       questions.forEach((q, idx) => {
-        const selected = document.querySelector(`input[name='q${idx}']:checked`);
+        const selected = document.querySelector(`input[name="q${idx}"]:checked`);
         if (selected && parseInt(selected.value) === q.answer) {
           score++;
         }
       });
-      document.getElementById("quiz-result").innerText = `Obtuviste ${score} de ${questions.length} respuestas correctas.`;
+      document.getElementById("quiz-result").textContent = `Tu puntaje: ${score} de ${questions.length}`;
     }
   </script>
 </body>
