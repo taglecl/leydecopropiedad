@@ -2,206 +2,221 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Guía Ley de Copropiedad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación Ley 21.442</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f5f9;
-      color: #333;
-      scroll-behavior: smooth;
+      background-color: #f4f6f8;
+      color: #2c3e50;
     }
     header {
-      background: #1b2a4e;
+      background: linear-gradient(90deg, #2c3e50, #34495e);
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 4rem 2rem;
     }
     header h1 {
-      margin: 0 0 10px;
-      font-size: 2.5em;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
     }
     header p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
-    section h2 {
-      color: #1b2a4e;
-      margin-bottom: 10px;
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
     }
-    ul {
-      padding-left: 20px;
+    .section p, .section ul {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #4a4a4a;
     }
-    .quiz-section {
-      background: #eef5ff;
+    .section ul li {
+      margin-bottom: 0.5rem;
+    }
+    .quiz {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      max-width: 1000px;
+      margin: 3rem auto;
+    }
+    .quiz h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
     }
     .question {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
     .question p {
-      font-weight: bold;
+      font-weight: 600;
     }
-    .question input {
-      margin-right: 10px;
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    input[type="radio"] {
+      margin-right: 0.5rem;
     }
     button {
-      background: #1b2a4e;
+      background-color: #3498db;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 1em;
-      margin-top: 20px;
+      transition: background-color 0.3s;
     }
-    #result {
-      margin-top: 20px;
+    button:hover {
+      background-color: #2980b9;
+    }
+    .result {
+      margin-top: 1.5rem;
       font-weight: bold;
-      color: green;
+      font-size: 1.2rem;
+      color: #27ae60;
     }
     footer {
+      background: #2c3e50;
+      color: white;
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
-      margin: 40px 0;
+      padding: 2rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Entiende la Ley de Copropiedad sin complicarte</h1>
-    <p>Una guía útil para administradores de edificios que quieren hacer bien su trabajo</p>
+    <h1>Capacitación Ley 21.442</h1>
+    <p>Una guía clara y profesional sobre la Ley de Copropiedad para administradores de edificios y comunidades residenciales.</p>
   </header>
 
-  <section>
-    <h2>¿Qué es la copropiedad?</h2>
-    <p>Cuando compartes edificio con otros, formas parte de una comunidad. Esta ley regula cómo convivimos, decidimos y pagamos lo común.</p>
+  <section class="section">
+    <h2>¿Qué es la Ley 21.442?</h2>
+    <p>Es la nueva normativa que regula la vida en comunidad en edificios y condominios. Reemplaza la antigua ley de copropiedad, buscando mayor transparencia, orden y participación de todos los actores: copropietarios, comité y administrador.</p>
   </section>
 
-  <section>
+  <section class="section">
     <h2>Rol del Administrador</h2>
+    <p>Es el representante legal de la comunidad. Debe cumplir funciones clave como:</p>
     <ul>
-      <li>Manejar gastos comunes de forma transparente</li>
-      <li>Ejecutar acuerdos del comité</li>
-      <li>Atender reclamos, emergencias y mantención</li>
-      <li>Desde 2022: debe estar certificado</li>
+      <li>Ejecutar acuerdos de la asamblea.</li>
+      <li>Mantener los bienes comunes en buen estado.</li>
+      <li>Contratar servicios y seguros necesarios.</li>
+      <li>Rendir cuentas periódicamente.</li>
+    </ul>
+    <p>Con la nueva ley, se exige certificación obligatoria y rendición de cuentas clara.</p>
+  </section>
+
+  <section class="section">
+    <h2>Comité de Administración</h2>
+    <p>Órgano fiscalizador elegido por los copropietarios. Sus funciones son:</p>
+    <ul>
+      <li>Supervisar al administrador.</li>
+      <li>Velar por el cumplimiento del reglamento interno.</li>
+      <li>Evaluar presupuestos y proyectos.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Comité y Asambleas</h2>
-    <p>El comité decide, el administrador ejecuta. Las asambleas (incluso por Zoom) son obligatorias para definir presupuestos y reglas.</p>
-  </section>
-
-  <section>
-    <h2>Cambios 2022</h2>
+  <section class="section">
+    <h2>Asamblea de Copropietarios</h2>
+    <p>Instancia máxima de decisión. Participar en ella permite:</p>
     <ul>
-      <li>Administrador certificado</li>
-      <li>Reglamento obligatorio y actualizado</li>
-      <li>Registro de comunidades</li>
-      <li>Más fiscalización por parte del Estado</li>
+      <li>Elegir al comité y al administrador.</li>
+      <li>Aprobar o rechazar presupuestos.</li>
+      <li>Modificar el reglamento de copropiedad.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>¿Y si no cumples?</h2>
-    <p>Riesgo legal, multas, demandas y pérdida de confianza. La ley te exige estar informado y actuar con responsabilidad.</p>
+  <section class="section">
+    <h2>¿Qué cambia con la Ley 21.442?</h2>
+    <ul>
+      <li>Certificación obligatoria para administradores.</li>
+      <li>Reglas claras para rendición de cuentas.</li>
+      <li>Facilidad para asambleas virtuales.</li>
+      <li>Fiscalización por terceros en ciertos casos.</li>
+    </ul>
   </section>
 
-  <section id="quiz" class="quiz-section">
-    <h2>Test: ¿Cuánto sabes de la ley?</h2>
-    <form id="quizForm">
-      <div class="question">
-        <p>1. ¿Qué función tiene el comité?</p>
-        <label><input type="radio" name="q1" value="1">Tomar decisiones por la comunidad</label><br>
-        <label><input type="radio" name="q1" value="0">Revisar los ascensores</label>
-      </div>
-
-      <div class="question">
-        <p>2. ¿Quién paga los gastos comunes?</p>
-        <label><input type="radio" name="q2" value="1">Todos los copropietarios</label><br>
-        <label><input type="radio" name="q2" value="0">Solo el administrador</label>
-      </div>
-
-      <div class="question">
-        <p>3. ¿Qué debe incluir el reglamento interno?</p>
-        <label><input type="radio" name="q3" value="1">Normas de convivencia y uso de espacios</label><br>
-        <label><input type="radio" name="q3" value="0">Ofertas de departamentos</label>
-      </div>
-
-      <div class="question">
-        <p>4. ¿Qué pasa si el reglamento no se actualiza?</p>
-        <label><input type="radio" name="q4" value="0">No importa</label><br>
-        <label><input type="radio" name="q4" value="1">Puede ser motivo de sanción</label>
-      </div>
-
-      <div class="question">
-        <p>5. ¿Las asambleas pueden ser online?</p>
-        <label><input type="radio" name="q5" value="1">Sí, desde la ley de 2022</label><br>
-        <label><input type="radio" name="q5" value="0">No, deben ser presenciales</label>
-      </div>
-
-      <div class="question">
-        <p>6. ¿Qué debe hacer un administrador ante una fuga de agua?</p>
-        <label><input type="radio" name="q6" value="1">Actuar de inmediato</label><br>
-        <label><input type="radio" name="q6" value="0">Esperar a la próxima asamblea</label>
-      </div>
-
-      <div class="question">
-        <p>7. ¿Puede el administrador firmar contratos?</p>
-        <label><input type="radio" name="q7" value="1">Sí, si el comité lo autoriza</label><br>
-        <label><input type="radio" name="q7" value="0">No, nunca</label>
-      </div>
-
-      <div class="question">
-        <p>8. ¿Qué es el registro nacional de comunidades?</p>
-        <label><input type="radio" name="q8" value="1">Base de datos obligatoria con info de edificios</label><br>
-        <label><input type="radio" name="q8" value="0">Directorio de inmobiliarias</label>
-      </div>
-
-      <div class="question">
-        <p>9. ¿Cada cuánto hay que actualizar el reglamento?</p>
-        <label><input type="radio" name="q9" value="1">Cada 5 años</label><br>
-        <label><input type="radio" name="q9" value="0">Cada 20 años</label>
-      </div>
-
-      <div class="question">
-        <p>10. ¿Cuál es la sanción por no certificar al administrador?</p>
-        <label><input type="radio" name="q10" value="1">Multas y hasta inhabilitación</label><br>
-        <label><input type="radio" name="q10" value="0">Solo una advertencia verbal</label>
-      </div>
-
-      <button type="button" onclick="calcular()">Ver resultado</button>
-      <div id="result"></div>
-    </form>
+  <section class="quiz">
+    <h2>Evalúa tu aprendizaje</h2>
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">Enviar respuestas</button>
+    <div id="quiz-result" class="result"></div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Solucionador.cl</p>
+    <p>Desarrollado para administradores y comités de edificios. Ley 21.442 - Chile 2025.</p>
   </footer>
 
   <script>
-    function calcular() {
-      const form = document.forms['quizForm'];
-      let score = 0;
-      for (let i = 1; i <= 10; i++) {
-        const pregunta = form['q' + i];
-        if (pregunta && pregunta.value === "1") score++;
+    const questions = [
+      {
+        question: "¿Cuál es la principal función del comité de administración?",
+        options: ["Elegir al administrador", "Fiscalizar al administrador", "Hacer aseo en los pasillos"],
+        answer: 1
+      },
+      {
+        question: "¿Qué requisito nuevo impone la Ley 21.442 a los administradores?",
+        options: ["Saber cocinar", "Tener certificado de administración", "Ser abogado"],
+        answer: 1
+      },
+      {
+        question: "¿Cuál de estas funciones le corresponde a la asamblea de copropietarios?",
+        options: ["Cuidar plantas comunes", "Elegir al comité y aprobar presupuestos", "Firmar cheques"],
+        answer: 1
+      },
+      {
+        question: "¿Qué beneficio trae la ley al permitir asambleas virtuales?",
+        options: ["Más participación", "Menos trabajo al comité", "Se elimina el acta"],
+        answer: 0
+      },
+      {
+        question: "¿Qué es una rendición de cuentas clara?",
+        options: ["Una lista de compras", "Transparencia en gastos y decisiones", "Decir gracias"],
+        answer: 1
       }
-      const result = document.getElementById("result");
-      result.textContent = `Obtuviste ${score}/10 respuestas correctas. ${score >= 7 ? "¡Bien hecho!" : "Aún puedes repasar un poco más."}`;
+    ];
+
+    const quizContainer = document.getElementById("quiz-container");
+    questions.forEach((q, idx) => {
+      const div = document.createElement("div");
+      div.className = "question";
+      div.innerHTML = `<p>${idx + 1}. ${q.question}</p>` +
+        q.options.map((opt, i) => `
+          <label><input type="radio" name="q${idx}" value="${i}"> ${opt}</label>
+        `).join("");
+      quizContainer.appendChild(div);
+    });
+
+    function submitQuiz() {
+      let score = 0;
+      questions.forEach((q, idx) => {
+        const selected = document.querySelector(`input[name='q${idx}']:checked`);
+        if (selected && parseInt(selected.value) === q.answer) {
+          score++;
+        }
+      });
+      document.getElementById("quiz-result").innerText = `Obtuviste ${score} de ${questions.length} respuestas correctas.`;
     }
   </script>
 </body>
